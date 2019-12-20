@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:300,400,600,700|UnifrakturCook:700&display=swap');
+
+:root {
+  font-size: 20px;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: 'Josefin Slab', serif;
+}
+
+body {
+  background-color: black;
+  background-image: url('../images/beer.jpg');
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'UnifrakturCook', cursive;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 5px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.backdrop {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10%;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.75);
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 45px;
+  text-align: center;
+}
+
+footer {
+  justify-self: flex-start;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
