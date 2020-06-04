@@ -6,7 +6,9 @@
 
 html, body {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
   font-family: 'Josefin Slab', serif;
 }
 
@@ -19,23 +21,57 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'UnifrakturCook', cursive;
+h1, h2, h3, h4, h5, h6, p, ul, ol, main, footer {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 5px;
-  padding: 0;
+h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h1 + p, h1 + ul, h1 + ol, h1 + main, h1 + footer, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h2 + p, h2 + ul, h2 + ol, h2 + main, h2 + footer, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h3 + p, h3 + ul, h3 + ol, h3 + main, h3 + footer, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h4 + p, h4 + ul, h4 + ol, h4 + main, h4 + footer, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h5 + p, h5 + ul, h5 + ol, h5 + main, h5 + footer, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6, h6 + p, h6 + ul, h6 + ol, h6 + main, h6 + footer, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, p + p, p + ul, p + ol, p + main, p + footer, ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ul + p, ul + ul, ul + ol, ul + main, ul + footer, ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6, ol + p, ol + ul, ol + ol, ol + main, ol + footer, main + h1, main + h2, main + h3, main + h4, main + h5, main + h6, main + p, main + ul, main + ol, main + main, main + footer, footer + h1, footer + h2, footer + h3, footer + h4, footer + h5, footer + h6, footer + p, footer + ul, footer + ol, footer + main, footer + footer {
+  margin-top: 25px;
 }
 
 h1 {
   font-size: 3rem;
 }
 
+a {
+  color: inherit;
+}
+
+ul.hours {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+ul.hours li {
+  display: flex;
+  justify-content: center;
+}
+
+ul.hours li span {
+  width: 50%;
+}
+
+ul span.date {
+  margin-right: 35px;
+  text-align: right;
+}
+
+ul span.time {
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .backdrop {
   width: 100%;
   min-height: 100vh;
-  padding: 10%;
   box-sizing: border-box;
   background-color: rgba(0,0,0,0.75);
   color: #fff;
@@ -44,12 +80,13 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 25px 0;
 }
 
 main {
   width: 100%;
   max-width: 1100px;
-  padding: 0 45px;
+  padding: 0 25px;
   text-align: center;
 }
 
@@ -58,7 +95,12 @@ footer {
   align-self: flex-end;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+footer p {
+  width: 100%;
 }
