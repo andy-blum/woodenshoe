@@ -15,7 +15,7 @@ const beeper = require('beeper');
 const notify = require('gulp-notify');
 const del = require('del');
 const { exec } = require('child_process');
-const browserSync = require('browser-sync').create();
+const server = require('browser-sync').create();
 
 
 
@@ -33,9 +33,9 @@ const distPath = {
 }
 
 const watchPaths = [
-  'src/scss/**/*.scss',
-  'src/js/**/*.js',
-  'src/svg/**/*.svg',
+  'src/**/*.*',
+  '_includes/**/*.*',
+  '_layouts/**/*.*',
   'collections/**/*.*'
 ]
 
@@ -83,12 +83,13 @@ function scssTask(){
     .pipe(dest(distPath.css));
 }
 
-function serve() {
-  browserSync.init({
+function serve(done) {
+  server.init({
     server: {
-        baseDir: "./_site/"
+      baseDir: './_site/'
     }
   });
+  done();
 }
 
 function reload(done) {
@@ -162,5 +163,5 @@ exports.jekyll = series(jekyllBuild);
 
 exports.deploy = series(
   parallel(scssTask, jsTask, svgTask, spriteTask),
-  jekyllBuild,
+  jekyllBuild
 )
