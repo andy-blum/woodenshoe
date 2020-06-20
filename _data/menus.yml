@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 primary:
   - url: "/about"
@@ -19,3 +20,6 @@ social:
   - url: "tel:4196282349"
     title: 419-628-2349
     icon: false
+=======
+--- {}
+>>>>>>> d6aad04a743991b238828cf656b4be1a6c92a113
