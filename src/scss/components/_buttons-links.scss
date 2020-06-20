@@ -1,0 +1,46 @@
+a {
+  color: inherit;
+}
+
+a[class*=button--],
+button {
+  display: inline-block;
+  --color-background: transparent;
+  background: var(--color-background);
+  color: var(--color-text);
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-background);
+  border-radius: 4px;
+  padding: clamp(5px,.5em,25px) clamp(10px,1em,50px);
+  appearance: none;
+
+  &.button {
+    &--blue {
+      --color-background:var(--color-blue);
+      --color-text: var(--color-light);
+    }
+    &--yellow {
+      --color-background:var(--color-yellow);
+      --color-text: var(--color-dark);
+    }
+    &--dark {
+      --color-background:var(--color-dark);
+      --color-text: var(--color-light);
+    }
+    &--light {
+      --color-background:var(--color-light);
+      --color-text: var(--color-dark);
+    }
+
+    &--hollow {
+      --color-background: transparent;
+      border-color: var(--color-text);
+
+      &.button--blue {--color-text: var(--color-blue)}
+      &.button--yellow {--color-text: var(--color-yellow)}
+      &.button--light {--color-text: var(--color-light)}
+      &.button--dark {--color-text: var(--color-dark)}
+    }
+  }
+}

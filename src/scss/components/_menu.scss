@@ -1,0 +1,20 @@
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &.menu {
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+
+      li {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    a {padding: clamp(5px,.5em,25px) clamp(10px,1em,50px);}
+  }
+}

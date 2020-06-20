@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Dutch';
+  src: url('/font/Dutch.woff2') format('woff2'),
+      url('/font/Dutch.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: block;
+}
+
+
+
+:root {
+  --color-blue: #251d59;
+  --color-yellow: #f7f373;
+  --color-dark: #333;
+  --color-light: #fff;
+
+  --color-text: var(--color-dark);
+  --color-bg: var(--color-light);
+}
+
+

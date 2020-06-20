@@ -1,0 +1,33 @@
+// Align Within
+.flex,
+[class*="flex--"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex--left {justify-content: flex-start;}
+.flex--right {justify-content: flex-end;}
+.flex--center {justify-content: center;}
+.flex--around {justify-content: space-around;}
+.flex--between {justify-content: space-between;}
+.flex--even {justify-content: space-evenly;}
+
+.flex--top {align-items: flex-start;}
+.flex--bottom {align-items: flex-end;}
+.flex--middle {align-items: center;}
+.flex--stretch {align-items: stretch;}
+
+.flex--nowrap {flex-wrap: nowrap !important;}
+
+// Align Self
+.flex-self--left {justify-self: flex-start;}
+.flex-self--right {justify-self: flex-end;}
+.flex-self--center {justify-self: center;}
+.flex-self--around {justify-self: space-around;}
+.flex-self--between {justify-self: space-between;}
+.flex-self--even {justify-self: space-evenly;}
+
+.flex-self--top {align-self: flex-start;}
+.flex-self--bottom {align-self: flex-end;}
+.flex-self--middle {align-self: center;}
+.flex-self--stretch {align-self: stretch;}

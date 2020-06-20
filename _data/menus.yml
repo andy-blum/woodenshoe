@@ -1,0 +1,21 @@
+---
+primary:
+  - url: "/about"
+    title: About
+  - url: "/menu"
+    title: Our Menu
+  - url: "/contact"
+    title: Contact
+social:
+  - url: "https://www.facebook.com/thewoodenshoeinn/"
+    title: facebook
+    icon: facebook
+  - url: ""
+    title: twitter
+    icon: twitter
+  - url: ""
+    title: instagram
+    icon: instagram
+  - url: "tel:4196282349"
+    title: 419-628-2349
+    icon: false

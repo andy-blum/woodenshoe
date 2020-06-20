@@ -1,0 +1,16 @@
+<nav>
+  <ul class="menu">
+    {% for item in site.menus.social %}
+      <li>
+        {% if item.icon %}
+          <a href="{{item.url}}">
+            <span class="visually-hidden">{{item.title}}</span>
+            <svg><use xlink:href="#icon-{{item.icon}}"></use></svg>
+          </a>
+        {% else %}
+          <a href="{{item.url}}" class="button--yellow button--hollow">{{item.title}}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

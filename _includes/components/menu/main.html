@@ -1,0 +1,15 @@
+<nav>
+  <ul class="menu">
+    <li>
+      <a class="logo" href="/">
+        <span class="visually-hidden">Home</span>
+        <svg><use xlink:href="#icon-logo_full"></use></svg>
+      </a>
+    </li>
+    {% for item in site.menus.primary %}
+      <li>
+        <a href="{{item.url}}">{{item.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

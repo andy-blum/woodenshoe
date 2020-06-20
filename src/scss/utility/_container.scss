@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  max-width: 1370px;
+  margin: 0 auto;
+  padding: 0 35px;
+  box-sizing: border-box;
+
+  .container {
+    padding: 0;
+  }
+
+  .container-break {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    .container {
+      width: 100%;
+      max-width: 1270px;
+      margin: 0 auto;
+      padding: 0 35px;
+      box-sizing: border-box;
+    }
+  }
+}

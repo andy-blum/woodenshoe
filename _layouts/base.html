@@ -21,9 +21,12 @@
   <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>{{page.title}} | The Wooden Shoe Inn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
+  {% include components/svg/svg-symbols.svg %}
+  {% include regions/header.html %}
   {{content}}
 
   <script src="/assets/js/scripts.min.js"></script>

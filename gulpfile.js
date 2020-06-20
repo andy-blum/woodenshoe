@@ -34,7 +34,6 @@ const distPath = {
 
 const watchPaths = [
   'src/**/*.*',
-  '_includes/**/*.*',
   '_layouts/**/*.*',
   'collections/**/*.*'
 ]
