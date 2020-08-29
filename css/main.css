@@ -109,3 +109,25 @@ footer {
 footer p {
   width: 100%;
 }
+
+nav ul {
+  margin: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(1px,1px,1px,1px);
+  width: 1px;
+  height: 1px;
+  word-wrap: normal;
+}
