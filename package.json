@@ -1,0 +1,12 @@
+{
+  "name": "woodenshoe",
+  "version": "1.0.0",
+  "repository": "git@github.com:andy-blum/woodenshoe.git",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "scripts": {
+    "serve": "parcel index.html"
+  }
+}
